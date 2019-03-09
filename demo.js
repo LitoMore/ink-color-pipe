@@ -3,7 +3,7 @@ import {render} from 'ink';
 import ColorPipe from '.';
 
 function toHex(i) {
-	return (i + 0x000001).toString(16).substr(-6).padStart(6, '0');
+	return (i).toString(16).substr(-6).padStart(6, '0');
 }
 
 class Unicorn extends React.Component {
@@ -15,26 +15,27 @@ class Unicorn extends React.Component {
 	}
 
 	componentDidMount() {
-		this.changeColor();
+		this.changeStyle();
 	}
 
-	changeColor() {
+	changeStyle() {
 		if (this.state.color < 0xFFFFFF) {
 			this.setState(prevState => {
-				return	{color: prevState.color + 1};
+				return	{color: prevState.color + 0x00010};
 			});
 		}
 
 		setTimeout(() => {
-			this.changeColor();
+			this.changeStyle();
 		}, 1);
 	}
 
 	render() {
 		const {color} = this.state;
+		const modifiers = ['bold', 'underline', 'reverse', 'italic', 'strikethrough'];
 
 		return (
-			<ColorPipe styles={`#${toHex(color)}`}>
+			<ColorPipe styles={`#${toHex(color)}.${modifiers[color % modifiers.length]}`}>
 				#{toHex(this.state.color)}
 			</ColorPipe>
 		);
