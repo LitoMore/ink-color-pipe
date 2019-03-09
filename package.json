@@ -1,0 +1,74 @@
+{
+	"name": "ink-color-pipe",
+	"version": "0.0.0",
+	"description": "Create color text with simpler style strings in Ink",
+	"main": "dist.js",
+	"dependencies": {
+		"chalk-pipe": "^2.0.0",
+		"prop-types": "^15.7.2"
+	},
+	"devDependencies": {
+		"ava": "^1.3.1",
+		"eslint-config-xo-react": "^0.19.0",
+		"eslint-plugin-react": "^7.12.4",
+		"eslint-plugin-react-hooks": "^1.5.0",
+		"ink": "^2.0.4",
+		"ink-testing-library": "^1.0.0",
+		"react": "^16.8.4",
+		"xo": "^0.24.0"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "babel index.js --out-file=dist.js",
+		"prepublish": "npm run build",
+		"pretest": "npm run build",
+		"test": "xo && ava"
+	},
+	"files": [
+		"dist.js"
+	],
+	"keywords": [
+		"ink-component",
+		"ink",
+		"component",
+		"chalk",
+		"chalk-pipe",
+		"react",
+		"jsx",
+		"terminal",
+		"color",
+		"term",
+		"console",
+		"command-line"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LitoMore/ink-color-pipe.git"
+	},
+	"author": "LitoMore",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/LitoMore/ink-color-pipe/issues"
+	},
+	"homepage": "https://github.com/LitoMore/ink-color-pipe#readme",
+	"peerDependencies": {
+		"ink": ">=2.0.0",
+		"react": ">=16.8.0"
+	},
+	"babel": {
+		"presets": [
+			"@ava/stage-4",
+			"@babel/preset-react"
+		]
+	},
+	"ava": {
+		"color": true
+	},
+	"xo": {
+		"extends": [
+			"xo-react"
+		]
+	}
+}
