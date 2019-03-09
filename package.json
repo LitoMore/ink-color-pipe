@@ -25,6 +25,7 @@
 	},
 	"scripts": {
 		"build": "babel index.js --out-file=dist.js",
+		"demo": "babel demo.js --out-file=demo-dist.js && node demo-dist",
 		"prepublish": "npm run build",
 		"pretest": "npm run build",
 		"test": "xo && ava"
