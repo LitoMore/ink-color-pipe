@@ -44,7 +44,7 @@ Use dot `.` to separeate multiple styles.
 - [Hex triplet](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)
 - [CSS keywords](https://www.w3.org/wiki/CSS/Properties/color/keywords)
 
-## Relate
+## Related
 
 - [chalk-pipe](https://github.com/LitoMore/chalk-pipe) - Create chalk style schemes with simpler style strings
 
