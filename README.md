@@ -28,7 +28,7 @@ render(
 
 ## API
 
-### `ColorPipe`
+### `<ColorPipe>`
 
 #### styles
 
