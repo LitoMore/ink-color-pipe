@@ -4,7 +4,7 @@
 
 Create color text with simpler style strings in Ink
 
-![](https://raw.githubusercontent.com/LitoMore/ink-color-pipe/master/screenshot.svg)
+![](https://raw.githubusercontent.com/LitoMore/ink-color-pipe/master/screenshot.svg?sanitize=true)
 
 ## Install
 
