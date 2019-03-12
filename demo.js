@@ -28,7 +28,7 @@ class Unicorn extends React.Component {
 
 		setTimeout(() => {
 			this.changeStyle();
-		}, 1);
+		}, 500);
 	}
 
 	render() {
