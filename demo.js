@@ -8,11 +8,8 @@ function toHex(i) {
 }
 
 class Unicorn extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			color: 0x000000
-		};
+	state = {
+		color: 0x000000
 	}
 
 	componentDidMount() {
