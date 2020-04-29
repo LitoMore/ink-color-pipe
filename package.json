@@ -4,7 +4,7 @@
 	"description": "Create color text with simpler style strings in Ink",
 	"main": "dist.js",
 	"dependencies": {
-		"chalk-pipe": "^2.0.0",
+		"chalk-pipe": "^4.0.0",
 		"prop-types": "^15.7.2"
 	},
 	"devDependencies": {
@@ -71,7 +71,6 @@
 		"presets": [
 			"@ava/stage-4",
 			"@babel/preset-react"
-
 		],
 		"plugins": [
 			"@babel/plugin-proposal-class-properties"
