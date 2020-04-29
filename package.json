@@ -25,7 +25,7 @@
 		"xo": "^0.24.0"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"scripts": {
 		"build": "babel index.js --out-file=dist.js",
