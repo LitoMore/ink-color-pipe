@@ -4,9 +4,9 @@
 
 Create color text with simpler style strings in Ink
 
-For Ink 2, check [ink-color-pipe@1.0.0](https://www.npmjs.com/package/ink-color-pipe/v/1.0.0)
-
 ![](https://raw.githubusercontent.com/LitoMore/ink-color-pipe/master/screenshot.svg?sanitize=true)
+
+For Ink 2, check [ink-color-pipe@1.0.0](https://www.npmjs.com/package/ink-color-pipe/v/1.0.0)
 
 ## Install
 
