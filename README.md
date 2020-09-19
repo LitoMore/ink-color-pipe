@@ -1,8 +1,10 @@
 # ink-color-pipe [![](https://img.shields.io/travis/LitoMore/ink-color-pipe/master.svg)](https://travis-ci.org/LitoMore/ink-color-pipe)
 
-> [chalk-pipe](https://github.com/LitoMore/chalk-pipe) component for [Ink](https://github.com/vadimdemedes/ink)
+> [chalk-pipe](https://github.com/LitoMore/chalk-pipe) component for [Ink 3](https://github.com/vadimdemedes/ink)
 
 Create color text with simpler style strings in Ink
+
+For Ink 2, check [ink-color-pipe@1.0.0](https://www.npmjs.com/package/ink-color-pipe/v/1.0.0)
 
 ![](https://raw.githubusercontent.com/LitoMore/ink-color-pipe/master/screenshot.svg?sanitize=true)
 
@@ -14,21 +16,31 @@ $ npm i ink-color-pipe
 
 ## Usage
 
+This brings you a convenient way to use some color schemes.
+
+<img src="https://raw.githubusercontent.com/LitoMore/ink-color-pipe/master/media/demo.jpg" width="105px"/>
+
 ```javascript
 import React from 'react';
-import {render} from 'ink';
-import ColorPipe from 'ink-color-pipe';
+import {render, Text} from 'ink';
+import Color from 'ink-color-pipe';
+
+const link = 'blue.underline';
+const error = 'bgRed.white';
 
 render(
-	<ColorPipe styles="orange.bold.underline">
-		Unicorn
-	</ColorPipe>
+	<Text>
+		<Color styles={link}>Unicorn</Color>
+		<Color styles={error}>{' Error '}</Color>
+	</Text>
 );
 ```
 
 ## API
 
-### `<ColorPipe>`
+### `<Color>`
+
+`<Color>` is using [`<Transfrom>`](https://github.com/vadimdemedes/ink#transform) for text rendering.
 
 #### styles
 

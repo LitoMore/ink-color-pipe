@@ -2,42 +2,37 @@
 	"name": "ink-color-pipe",
 	"version": "1.0.0",
 	"description": "Create color text with simpler style strings in Ink",
-	"main": "dist.js",
+	"main": "dist/index.js",
 	"dependencies": {
-		"chalk-pipe": "^4.0.0",
-		"prop-types": "^15.7.2"
+		"chalk-pipe": "^4.0.0"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.5.0",
-		"@babel/core": "^7.5.0",
-		"@babel/plugin-proposal-class-properties": "^7.5.0",
-		"@babel/preset-react": "^7.0.0",
-		"@types/react": "^16.8.23",
+		"@sindresorhus/tsconfig": "^0.7.0",
+		"@types/chalk-pipe": "^2.0.0",
+		"@types/react": "^16.9.49",
 		"ava": "^1.4.1",
-		"babel-eslint": "^10.0.2",
-		"eslint-config-xo-react": "^0.20.0",
-		"eslint-plugin-react": "^7.14.2",
-		"eslint-plugin-react-hooks": "^1.6.1",
-		"ink": "^2.3.0",
-		"ink-testing-library": "^1.0.2",
-		"react": "^16.8.6",
-		"typescript": "^3.5.2",
-		"xo": "^0.24.0"
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"ink": "^3.0.6",
+		"ink-testing-library": "^2.0.1",
+		"react": "^16.13.1",
+		"typescript": "^4.0.3",
+		"xo": "^0.33.1"
 	},
 	"engines": {
 		"node": ">=10"
 	},
 	"scripts": {
-		"build": "babel index.js --out-file=dist.js",
-		"demo": "babel demo.js --out-file=demo-dist.js && node demo-dist",
+		"build": "tsc",
 		"prepublish": "npm run build",
 		"pretest": "npm run build",
-		"test": "xo && ava && npm run typecheck",
-		"typecheck": "tsc --noEmit --jsx react index.test-d.tsx"
+		"test": "xo",
+		"demo": "tsc --jsx react --esModuleInterop example.tsx --outDir dist && node dist/example.js"
 	},
 	"files": [
-		"dist.js",
-		"index.d.ts"
+		"dist/index.js",
+		"dist/index.d.ts"
 	],
 	"keywords": [
 		"ink-component",
@@ -64,32 +59,18 @@
 	},
 	"homepage": "https://github.com/LitoMore/ink-color-pipe#readme",
 	"peerDependencies": {
-		"ink": ">=2.0.0",
+		"ink": ">=3.0.0",
 		"react": ">=16.8.0"
-	},
-	"babel": {
-		"presets": [
-			"@ava/stage-4",
-			"@babel/preset-react"
-		],
-		"plugins": [
-			"@babel/plugin-proposal-class-properties"
-		]
 	},
 	"ava": {
 		"color": true
 	},
 	"xo": {
-		"parser": "babel-eslint",
 		"extends": [
 			"xo-react"
 		],
-		"plugin": [
-			"react"
-		],
 		"rules": {
-			"react/no-unused-prop-types": 1,
-			"unicorn/no-hex-escape": 0
+			"react/prop-types": 0
 		}
 	}
 }
