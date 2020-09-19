@@ -1,6 +1,6 @@
 {
 	"name": "ink-color-pipe",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Create color text with simpler style strings in Ink",
 	"main": "dist/index.js",
 	"dependencies": {
