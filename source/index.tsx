@@ -14,5 +14,4 @@ const Color: FunctionComponent<ColorProps> = ({
 	return <Transform transform={chalkPipe(styles)}>{children}</Transform>;
 };
 
-module.exports = Color;
 export default Color;

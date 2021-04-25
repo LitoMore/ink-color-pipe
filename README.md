@@ -1,4 +1,4 @@
-# ink-color-pipe [![](https://img.shields.io/travis/LitoMore/ink-color-pipe/master.svg)](https://travis-ci.org/LitoMore/ink-color-pipe)
+# ink-color-pipe
 
 > [chalk-pipe](https://github.com/LitoMore/chalk-pipe) component for [Ink 3](https://github.com/vadimdemedes/ink)
 

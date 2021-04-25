@@ -5,5 +5,5 @@
 		"esModuleInterop": true,
 		"outDir": "dist"
 	},
-	"include": ["source"]
+	"include": ["source", "example"]
 }
