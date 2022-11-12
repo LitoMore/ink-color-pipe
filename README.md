@@ -40,7 +40,7 @@ render(
 
 ### `<Color>`
 
-`<Color>` is using [`<Transfrom>`](https://github.com/vadimdemedes/ink#transform) for text rendering.
+`<Color>` is using [`<Transform>`](https://github.com/vadimdemedes/ink#transform) for text rendering.
 
 #### styles
 
