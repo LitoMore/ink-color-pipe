@@ -23,7 +23,7 @@
 		"xo": "^0.59.3"
 	},
 	"engines": {
-		"node": "^18"
+		"node": ">=18"
 	},
 	"scripts": {
 		"build": "del-cli dist && tsc",
