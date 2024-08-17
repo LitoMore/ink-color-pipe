@@ -1,17 +1,18 @@
-import React, {FunctionComponent, ReactNode} from 'react';
+import React, {type ReactNode} from 'react';
 import {Transform} from 'ink';
 import chalkPipe from 'chalk-pipe';
 
+// eslint-disable-next-line unicorn/prevent-abbreviations
 export type ColorProps = {
-	styles?: string;
-	children?: ReactNode;
+	readonly styles?: string;
+	readonly children?: ReactNode;
 };
 
-const Color: FunctionComponent<ColorProps> = ({
+function Color({
 	styles = '',
-	children
-}) => {
-	return <Transform transform={chalkPipe(styles)}>{children}</Transform>;
-};
+	children,
+}: ColorProps) {
+	return <Transform transform={text => chalkPipe(styles)(text)}>{children}</Transform>;
+}
 
 export default Color;

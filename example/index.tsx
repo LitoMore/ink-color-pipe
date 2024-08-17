@@ -9,5 +9,5 @@ render(
 	<Text>
 		<Color styles={link}>Unicorn</Color>
 		<Color styles={error}>{' Error '}</Color>
-	</Text>
+	</Text>,
 );
