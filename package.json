@@ -1,6 +1,6 @@
 {
 	"name": "ink-color-pipe",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"description": "Create color text with simpler style strings in Ink",
 	"type": "module",
 	"exports": "./dist/source/index.js",
