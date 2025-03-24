@@ -34,6 +34,23 @@ render(
 );
 ```
 
+## Built-in Chalk
+
+All Chalk and `chalk-pipe` exported functions, variables, and declarations are exposed for convenience.
+
+This can be useful if you want to use `chalk` directly.
+
+```js
+import { Chalk, chalk, chalkPipe } from "ink-color-pipe";
+
+const customChalk = new Chalk({ level: 0 });
+
+console.log(chalk.blue("Hello"));
+console.log(customChalk.green("World"));
+
+console.log(chalkPipe("blue.bgGreen.italic")("Hello World"));
+```
+
 ## API
 
 ### `<Color>`
