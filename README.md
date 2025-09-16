@@ -1,6 +1,6 @@
 # ink-color-pipe
 
-> [chalk-pipe](https://github.com/LitoMore/chalk-pipe) component for [Ink 5](https://github.com/vadimdemedes/ink)
+> [chalk-pipe](https://github.com/LitoMore/chalk-pipe) component for [Ink 6](https://github.com/vadimdemedes/ink)
 
 Create color text with simpler style strings in Ink
 
@@ -8,8 +8,8 @@ Create color text with simpler style strings in Ink
 
 ## Install
 
-```bash
-$ npm i ink-color-pipe
+```shell
+npm i ink-color-pipe
 ```
 
 ## Usage
